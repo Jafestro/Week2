@@ -41,3 +41,19 @@ td {
 .closeButton {
   text-align: end;
 }
+
+dialog {
+  height: 20rem;
+  min-width: 30rem;
+}
+.content{
+  display: flex;
+  justify-content: space-between;
+}
+.menu {
+  background-color: #00d9b8;
+  width: 50%;
+}
+.info {
+  width: 45%
+}

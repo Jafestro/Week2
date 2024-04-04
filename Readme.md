@@ -12,5 +12,5 @@
 
 4. js-recap04 all done
 
-5. js-recap05 1-4 done, 5 is half undone will do it on Monday 01.04.2024 sorry for being late for this one I was having issues with CORS problem
+5. js-recap05 all done
 

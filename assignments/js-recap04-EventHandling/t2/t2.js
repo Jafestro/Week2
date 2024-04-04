@@ -805,13 +805,13 @@ function handlePosition(position) {
       });
       row.classList.add('highlight');
       dialogNode.innerHTML = '';
-      appendInfoToDialog('❌');
-      appendInfoToDialog(`Name: ${restaurant.name}`);
-      appendInfoToDialog(`Address: ${restaurant.address}`);
-      appendInfoToDialog(`Postal Code: ${restaurant.postalCode}`);
-      appendInfoToDialog(`City: ${restaurant.city}`);
-      appendInfoToDialog(`Phone Number: ${restaurant.phone}`);
-      appendInfoToDialog(`Company: ${restaurant.company}`);
+      appendInfoToElement('❌');
+      appendInfoToElement(`Name: ${restaurant.name}`);
+      appendInfoToElement(`Address: ${restaurant.address}`);
+      appendInfoToElement(`Postal Code: ${restaurant.postalCode}`);
+      appendInfoToElement(`City: ${restaurant.city}`);
+      appendInfoToElement(`Phone Number: ${restaurant.phone}`);
+      appendInfoToElement(`Company: ${restaurant.company}`);
 
       const xButtonNode = dialogNode
           .querySelectorAll('p').item(0);
@@ -829,7 +829,7 @@ function handlePosition(position) {
 }
 
 
-function appendInfoToDialog(info) {
+function appendInfoToElement(info) {
   const pElement = document.createElement('p');
   pElement.textContent = info;
   dialogNode.appendChild(pElement);
